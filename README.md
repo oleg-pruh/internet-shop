@@ -1,2 +1,1 @@
-# cinema-app
 # internet-shop
