@@ -1,8 +1,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
-<jsp:include page="../includes/header.jsp" />
-aaaaaaaaaaaaaaaa
+<jsp:include page="/WEB-INF/includes/header.jsp" />
+
+
 <section class="padding-y">
     <div class="container">
         <div class="row">
@@ -67,12 +68,12 @@ aaaaaaaaaaaaaaaa
                                     <input class="form-check-input" type="checkbox" value="">
                                     <span class="form-check-label"> Honda </span>
                                     <b class="badge rounded-pill bg-gray-dark float-end">30</b>
-                                </label> <!-- form-check end.// -->
+                                </label>
                                 <label class="form-check mb-2">
                                     <input class="form-check-input" type="checkbox" value="">
                                     <span class="form-check-label"> Honda accord </span>
                                     <b class="badge rounded-pill bg-gray-dark float-end">30</b>
-                                </label> <!-- form-check end.// -->
+                                </label>
                             </div>
                         </div>
                     </article>
@@ -91,20 +92,15 @@ aaaaaaaaaaaaaaaa
                                         <label for="min" class="form-label">Min</label>
                                         <input class="form-control" id="min" placeholder="$0" type="number">
                                     </div>
-                                    <!-- col end.// -->
                                     <div class="col-6">
                                         <label for="max" class="form-label">Max</label>
                                         <input class="form-control" id="max" placeholder="$1,0000" type="number">
                                     </div>
-                                    <!-- col end.// -->
                                 </div>
-                                <!-- row end.// -->
                                 <button class="btn btn-light w-100" type="button">Apply</button>
                             </div>
-                            <!-- card-body.// -->
                         </div>
                     </article>
-                    <!-- filter-group // -->
                     <article class="filter-group">
                         <header class="card-header">
                             <a href="#" class="title" data-bs-toggle="collapse" data-bs-target="#collapse_aside3">
@@ -131,10 +127,8 @@ aaaaaaaaaaaaaaaa
                                     <span class="btn btn-light"> XXL </span>
                                 </label>
                             </div>
-                            <!-- card-body.// -->
                         </div>
                     </article>
-                    <!-- filter-group // -->
                     <article class="filter-group">
                         <header class="card-header">
                             <a href="#" class="title" data-bs-toggle="collapse" data-bs-target="#collapse_aside4">
@@ -154,7 +148,6 @@ aaaaaaaaaaaaaaaa
                               </ul>
                            </span>
                                 </label>
-                                <!-- form-check end.// -->
                                 <label class="form-check mb-2">
                                     <input class="form-check-input" type="checkbox" value="" checked="">
                                     <span class="form-check-label">
@@ -166,7 +159,6 @@ aaaaaaaaaaaaaaaa
                               </ul>
                            </span>
                                 </label>
-                                <!-- form-check end.// -->
                                 <label class="form-check mb-2">
                                     <input class="form-check-input" type="checkbox" value="" checked="">
                                     <span class="form-check-label">
@@ -178,7 +170,6 @@ aaaaaaaaaaaaaaaa
                               </ul>
                            </span>
                                 </label>
-                                <!-- form-check end.// -->
                                 <label class="form-check mb-2">
                                     <input class="form-check-input" type="checkbox" value="" checked="">
                                     <span class="form-check-label">
@@ -219,7 +210,9 @@ aaaaaaaaaaaaaaaa
                     <article class="card card-product-list">
                         <div class="row g-0">
                             <aside class="col-xl-3 col-md-4">
-                                <a href="#" class="img-wrap"> <img src="/img/${product.image}"> </a>
+                                <a href="#" class="img-wrap">
+                                    <img src="/img/${product.image}">
+                                </a>
                             </aside>
                             <div class="col-xl-6 col-md-5 col-sm-7">
                                 <div class="card-body">
@@ -262,25 +255,11 @@ aaaaaaaaaaaaaaaa
                         </ul>
                     </nav>
                 </footer>
-                <!-- ========= content items .// ========= -->
             </main>
-            <!-- col .// -->
         </div>
-        <!-- row .// -->
     </div>
-    <!-- container .//  -->
 </section>
 
 
 
-
-
-
-
-
-
-
-
-
-
-<jsp:include page="../includes/footer.jsp" />
+<jsp:include page="/WEB-INF/includes/footer.jsp" />

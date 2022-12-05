@@ -2,8 +2,10 @@ package com.olegpruh.internetshop.service;
 
 import com.olegpruh.internetshop.model.User;
 
-public interface UserService {
-    User add(User user);
+import java.util.Optional;
 
-    User findByEmail(String email);
+public interface UserService {
+    User save(User user);
+
+    Optional<User> findByEmail(String email);
 }

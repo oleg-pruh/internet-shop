@@ -3,6 +3,7 @@ package com.olegpruh.internetshop.service.impl;
 import com.olegpruh.internetshop.model.Product;
 import com.olegpruh.internetshop.repository.ProductRepository;
 import com.olegpruh.internetshop.service.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
 public class ProductServiceImpl implements ProductService {
     private ProductRepository repository;
 
+    @Autowired
     public ProductServiceImpl(ProductRepository repository) {
         this.repository = repository;
     }
@@ -27,7 +29,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> getAllBySearchQuery(String query) {
-        return repository.findAllByTitleLike(query);
+        return repository.findAllByTitleContainsIgnoreCase(query);
     }
 
     @Override

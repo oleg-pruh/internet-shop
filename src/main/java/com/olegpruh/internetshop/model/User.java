@@ -2,13 +2,15 @@ package com.olegpruh.internetshop.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Data
 @Entity
 @Table(name = "users")
+@Data
+@NoArgsConstructor
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private Long id;
     private String name;
     @Column(unique = true)
@@ -17,5 +19,4 @@ public class User {
     private String phone;
     private String address;
     private String city;
-    private byte[] salt;
 }
