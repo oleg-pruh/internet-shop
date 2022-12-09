@@ -1,8 +1,8 @@
 package com.olegpruh.internetshop.validation;
 
 import com.olegpruh.internetshop.model.dto.UserRegistrationDto;
-import jakarta.validation.ConstraintValidator;
-import jakarta.validation.ConstraintValidatorContext;
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
 import org.springframework.beans.BeanWrapperImpl;
 
 public class PasswordValidator implements ConstraintValidator<Password, UserRegistrationDto> {

@@ -1,6 +1,6 @@
 package com.olegpruh.internetshop.validation;
 
-import jakarta.validation.Constraint;
+import javax.validation.Constraint;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
